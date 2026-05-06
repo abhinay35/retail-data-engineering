@@ -46,7 +46,7 @@ Retail data engineering project using pyspark
 
 
 ------------------------------------------------------------
-  Architecture Explanation
+----->Architecture Explanation
 
 * **Azure Data Factory** → Extracts data from API
 * **ADLS Gen2** → Stores raw data (Bronze)
@@ -56,13 +56,14 @@ Retail data engineering project using pyspark
 * **Synapse Analytics** → Data warehousing
 * **BI Tools** → Reporting & insights
 ----------------------------------------------------------
-The project follows the Medallion Architecture:
+----->The project follows the Medallion Architecture:
 
 Bronze Layer → Raw data ingestion
 Silver Layer → Cleaned and transformed data
 Gold Layer → Aggregated data for analytics
 ----------------------------------------------------------
-Tech Stack
+----->Tech Stack
+
 Azure Data Factory (ADF)
 Azure Data Lake Storage Gen2 (ADLS)
 Azure Databricks (PySpark)
@@ -70,7 +71,7 @@ Azure Synapse Analytics
 Apache Spark
 REST API (Data Source)
 --------------------------------------------------------------------------------
-##🔄 Data Pipeline Flow
+---->Data Pipeline Flow
 Data Ingestion
 Data is extracted from API sources.
 Azure Data Factory pipelines are used to load raw data into ADLS (Bronze layer).
@@ -84,7 +85,8 @@ Processed data is loaded into Azure Synapse Analytics.
 Analytics & Reporting
 Data is structured for querying and analysis.
 --------------------------------------------------------------------------------
-📁 Project Structure
+----->Project Structure
+
 ├── data_ingestion/
 ├── databricks_notebooks/
 ├── pipelines/
@@ -92,7 +94,8 @@ Data is structured for querying and analysis.
 ├── scripts/
 └── README.md
 --------------------------------------------------------------------------------
-##How to Run the Project
+---->How to Run the Project
+
 Create Azure resources:
 Data Factory
 Data Lake Storage Gen2
@@ -104,5 +107,6 @@ Run ADF pipelines to ingest data.
 Execute Databricks notebooks for transformations.
 Load processed data into Synapse.
 -------------------------------------------------------------------------------
-#Acknowledgements
+----->Acknowledgements
+
 This project is inspired by a real-world Azure Data Engineering tutorial and is intended for learning

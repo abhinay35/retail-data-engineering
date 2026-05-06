@@ -43,11 +43,10 @@ Retail data engineering project using pyspark
                          +----------------------+
                          |  Analytics / BI      |
                          +----------------------+
-```
 
----
 
-###  Architecture Explanation
+------------------------------------------------------------
+  Architecture Explanation
 
 * **Azure Data Factory** → Extracts data from API
 * **ADLS Gen2** → Stores raw data (Bronze)
@@ -57,13 +56,13 @@ Retail data engineering project using pyspark
 * **Synapse Analytics** → Data warehousing
 * **BI Tools** → Reporting & insights
 ----------------------------------------------------------
-##The project follows the Medallion Architecture:
+The project follows the Medallion Architecture:
 
 Bronze Layer → Raw data ingestion
 Silver Layer → Cleaned and transformed data
 Gold Layer → Aggregated data for analytics
 ----------------------------------------------------------
-##Tech Stack
+Tech Stack
 Azure Data Factory (ADF)
 Azure Data Lake Storage Gen2 (ADLS)
 Azure Databricks (PySpark)

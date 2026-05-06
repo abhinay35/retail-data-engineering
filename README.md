@@ -62,28 +62,27 @@ Bronze Layer → Raw data ingestion
 Silver Layer → Cleaned and transformed data
 Gold Layer → Aggregated data for analytics
 ----------------------------------------------------------
------>Tech Stack
-
-> Azure Data Factory (ADF)
-> Azure Data Lake Storage Gen2 (ADLS)
-> Azure Databricks (PySpark)
-> Azure Synapse Analytics
-> Apache Spark
-> REST API (Data Source)
+**Tech Stack
+.  Azure Data Factory (ADF)
+.  Azure Data Lake Storage Gen2 (ADLS)
+.  Azure Databricks (PySpark)
+.  Azure Synapse Analytics
+.  Apache Spark
+.  REST API (Data Source)
 --------------------------------------------------------------------------------
----->Data Pipeline Flow
-.Data Ingestion
-.Data is extracted from API sources.
-.Azure Data Factory pipelines are used to load raw data into ADLS (Bronze layer).
-.Data Storage
-.Raw data is stored in Azure Data Lake Gen2.
-.Data Transformation
-.Azure Databricks is used to process and clean data using PySpark.
-.Data is transformed from Bronze → Silver → Gold layers.
-.Data Warehousing
-.Processed data is loaded into Azure Synapse Analytics.
-.Analytics & Reporting
-.Data is structured for querying and analysis.
+***Data Pipeline Flow
+. Data Ingestion
+. Data is extracted from API sources.
+. Azure Data Factory pipelines are used to load raw data into ADLS (Bronze layer).
+. Data Storage
+. Raw data is stored in Azure Data Lake Gen2.
+. Data Transformation
+. Azure Databricks is used to process and clean data using PySpark.
+. Data is transformed from Bronze → Silver → Gold layers.
+. Data Warehousing
+. Processed data is loaded into Azure Synapse Analytics.
+. Analytics & Reporting
+. Data is structured for querying and analysis.
 --------------------------------------------------------------------------------
 ----->Project Structure
 
